@@ -14,13 +14,16 @@ $(document).ready(function() {
     $('button[data-action="add"]').on('click', function() {
         /* body... */
         var hotelVal = $("#hotel-choices option:selected").val();
-        console.log(hotelVal);
+        // console.log(hotelVal);
 
         // should we insert a custom id or try to traverse with what is there in the DOM
 
         // what is the proper data value for this element
-        var span = $("#hotelspan")
-        console.log(span);
+        $("#hotelspan").text(hotelVal);
+
+        // console.log(span);
+        // span = hotelVal;
+        // console.log(span);
     });
 
 
